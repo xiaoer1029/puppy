@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiaoer.mapper.PuppyMessageMapper">
+
+    <resultMap id="BaseResultMap" type="com.xiaoer.pojo.PuppyMessage">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="puppy_name" column="puppy_name" jdbcType="VARCHAR"/>
+            <result property="healthy" column="healthy" jdbcType="VARCHAR"/>
+            <result property="age" column="age" jdbcType="INTEGER"/>
+            <result property="donate_by" column="donate_by" jdbcType="VARCHAR"/>
+            <result property="donate_time" column="donate_time" jdbcType="TIMESTAMP"/>
+            <result property="adoption_by" column="adoption_by" jdbcType="VARCHAR"/>
+            <result property="adoption_time" column="adoption_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,puppy_name,healthy,
+        age,donate_by,donate_time,
+        adoption_by,adoption_time
+    </sql>
+</mapper>

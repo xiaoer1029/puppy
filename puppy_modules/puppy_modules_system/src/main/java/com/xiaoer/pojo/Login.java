@@ -12,7 +12,6 @@ import lombok.NoArgsConstructor;
  */
 @TableName(value ="user_login")
 @Data
-@NoArgsConstructor
 public class Login {
     /**
      * 主键
