@@ -1,20 +1,15 @@
-package com.xiaoer.pojo;
+package com.xiaoer.pojo.dto;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
-import java.io.Serializable;
 import java.util.Date;
 
-/**
- *
- * @TableName puppy_message
- */
 @TableName(value ="puppy_message")
 @Data
-public class PuppyMessage implements Serializable {
+public class PuppyMessageDTO {
     /**
      * 主键
      */
@@ -44,7 +39,7 @@ public class PuppyMessage implements Serializable {
     /**
      * 捐赠时间
      */
-    private String donateTime;
+    private Date donateTime;
 
     /**
      * 0为未领养，1为领养
@@ -59,6 +54,6 @@ public class PuppyMessage implements Serializable {
     /**
      * 领养时间
      */
-    private String adoptionTime;
+    private Date adoptionTime;
 
 }
